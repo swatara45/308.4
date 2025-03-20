@@ -44,7 +44,6 @@ for (let i = 0; i < str.length; i++) {
 
 // Question 2 Expanding functionality
 
-// Split the string into rows using the newline character
 let rows = str.split('\n');
 
 // Loop through each row
@@ -56,7 +55,7 @@ for (let i = 0; i < rows.length; i++) {
   table.push(columns);
 }
 
-// Log the 2D array to check the result
+// Log the 2D array 
 console.log(table);
 
 
@@ -93,9 +92,6 @@ console.log(info);
 
 
 // Part 4: Sorting and Manipulating Data
-console.log('\nPart 4: Sorting and Manipulating Data\n')
-
-// Sort array in place
 info.sort();
 
 info.pop();
@@ -117,16 +113,13 @@ console.log(`The average age of the group is ${totalAge / numberOfPeople}`)
 
 
 // Part 5: Full Circle
-console.log('\nPart 5: Full Circle\n');
 
-//convert array of objects to multi-dimensional array, then covert to csv string 
+//convert array of objects 
 const csvArray = [];
 
-// find the headers from the 1st object, add to array
 let csvHeaders = Object.keys(info[0]);
 csvArray.push(csvHeaders);
 
-// get the rest of the data from object value, store in an array, then add to csvArray
 for (let person in info) {
   let personObject = info[person];
   let personArr = [];
