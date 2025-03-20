@@ -1,3 +1,5 @@
+//Question 1
+
 let str = 'ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19\n63,Blaine,Quiz Master,58\n98,Bill,Doctor’s Assistant,26'
 
 let cell1 = '';
@@ -42,7 +44,7 @@ for (let i = 0; i < str.length; i++) {
   }
 }
 
-// Question 2 Expanding functionality
+// Question 2
 
 let rows = str.split('\n');
 
@@ -72,13 +74,12 @@ const data = [
 
 const info = [];
 
-//starting from the row after header row, loop through each row
 for (let i = 1; i < data.length; i++) {
   //create a person object for each row in the data
   let row = data[i];
   let personObject = {};
 
-  //loop through the array elements of the row and add the key-value pair to personObj
+  //loop through the array elements of the row and add the key-value pair to personObject
   for (let k = 0; k < row.length; k++) {
     // convert the keys to lower case
     let key = data[0][k].toLowerCase();
@@ -91,7 +92,7 @@ for (let i = 1; i < data.length; i++) {
 console.log(info);
 
 
-// Part 4: Sorting and Manipulating Data
+// Question 4
 info.sort();
 
 info.pop();
@@ -112,7 +113,7 @@ for (let i = 0; i < info.length; i++) {
 console.log(`The average age of the group is ${totalAge / numberOfPeople}`)
 
 
-// Part 5: Full Circle
+// Question 5
 
 //convert array of objects 
 const csvArray = [];
